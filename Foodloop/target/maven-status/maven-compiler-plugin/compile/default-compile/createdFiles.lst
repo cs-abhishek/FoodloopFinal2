@@ -1,0 +1,6 @@
+com\example\DatabaseConnection.class
+com\example\FormServlet.class
+com\example\User.class
+com\example\UserDataServlet.class
+com\example\MyServlet.class
+com\example\RegistrationServlet.class

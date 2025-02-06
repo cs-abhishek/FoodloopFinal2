@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodLoop - Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+      body {
+        background-color: #f4f4f4; /* Light Gray */
+        color: #333333; /* Dark Text for readability */
+      }
+      /* Hero Section */
+      .hero {
+        background: url("images/food-hero.jpg") no-repeat center center/cover;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+        transition: background-image 1s ease-in-out;
+        background-color: #b8b8b8;
+      }
+
+      .hero h1 {
+        font-size: 4rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .hero p {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+      }
+
+      /* About Section */
+      .about-section {
+        background: #f8f9fa;
+        padding: 50px 20px;
+      }
+
+      .about-image {
+        border-radius: 20px;
+        object-fit: cover;
+      }
+
+      /* Features Section */
+      .feature-card {
+        border-radius: 15px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+      }
+
+      .feature-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      .feature-card img {
+        height: 200px;
+        object-fit: cover;
+      }
+
+      /* Footer */
+      footer {
+        background: #343a40;
+        color: white;
+        padding: 30px 0;
+      }
+
+      footer a {
+        color: #f8f9fa;
+      }
+
+      footer a:hover {
+        color: #007bff;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">FoodLoop</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact-us.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="register.html">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="donate-food.html">Donate Food</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero-section">
+      <h1>Join FoodLoop Today</h1>
+      <p>Your excess food can save lives. Together, let's beat hunger.</p>
+      <a href="donate-food.html" class="btn btn-primary btn-lg px-5"
+        >Donate Now</a
+      >
+    </header>
+
+    <!-- About Section -->
+    <section class="about-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img
+              src="images/whoweare.jpg"
+              alt="About FoodLoop"
+              class="img-fluid about-image"
+            />
+          </div>
+          <div class="col-md-6">
+            <h2>Who We Are</h2>
+            <p>
+              At FoodLoop, we connect restaurants, weddings, and events with
+              NGOs and communities to donate surplus food instead of wasting it.
+              Our government-funded platform makes food donation easy, and also
+              donors receive a compensation as an incentive. Join us in reducing
+              food waste and helping those in need, while the government
+              supports your efforts.
+            </p>
+            <p>
+              With a user-friendly platform, we simplify the food donation
+              process, making it efficient, impactful, and sustainable. Join us
+              in our vision to build a hunger-free world.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Why Choose FoodLoop?</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card feature-card shadow">
+              <img
+                src="images/donation.jpg"
+                class="card-img-top"
+                alt="Seamless Donations"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Seamless Donations</h5>
+                <p class="card-text">
+                  An intuitive platform to donate food effortlessly and make a
+                  real difference.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card feature-card shadow">
+              <img
+                src="images/network.jpg"
+                class="card-img-top"
+                alt="Trusted Network"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Trusted Network</h5>
+                <p class="card-text">
+                  Collaborate with reliable NGOs and charities to ensure every
+                  donation is impactful.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card feature-card shadow">
+              <img
+                src="images/delivery.jpg"
+                class="card-img-top"
+                alt="Fast Delivery"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fast & Reliable Delivery</h5>
+                <p class="card-text">
+                  Dedicated delivery personnel ensuring your donations reach the
+                  right people on time.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call-to-Action -->
+    <section class="bg-dark text-white text-center py-5">
+      <h2>Ready to Make a Difference?</h2>
+      <p>Join FoodLoop today and be a part of the solution to food wastage.</p>
+      <a href="register.html" class="btn btn-outline-light btn-lg px-5"
+        >Get Started</a
+      >
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <p>&copy; 2024 FoodLoop. All Rights Reserved.</p>
+        <p>
+          <a href="terms.html">Terms & Conditions</a> |
+          <a href="privacy-policy.html">Privacy Policy</a>
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Array of hero images to cycle through
+      const heroImages = [
+        "images/hero.jpg", // First image
+        "images/hero2.jpg", // Second image
+        "images/hero3.jpg",
+        "images/hero5.jpg", // Third image
+      ];
+
+      let currentImageIndex = 0;
+
+      // Function to change the hero background image
+      function changeHeroImage() {
+        const heroSection = document.getElementById("hero-section");
+        currentImageIndex = (currentImageIndex + 1) % heroImages.length; // Loop through the images
+        heroSection.style.backgroundImage = `url('${heroImages[currentImageIndex]}')`;
+      }
+
+      // Change image every 5 seconds (5000 milliseconds)
+      setInterval(changeHeroImage, 2500);
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
